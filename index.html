@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Clementine 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<!-- MENU -->
+<div id="menuScreen">
+<h1>Para vos 🥰🫶</h1>
+<button id="startBtn" class="start-btn">Entrar</button>
+</div>
+
+<!-- CONTENIDO -->
+<div id="content">
+<img id="talkingCat" src="img/popcat.gif">
+<div id="text"></div>
+</div>
+
+<!-- TARJETA MUSICA -->
+<div class="music-card" id="musicCard">
+<img src="img/cover.jpg">
+<div class="music-info">
+<h3>Right Here</h3>
+<p>Lil Peep</p>
+
+<div class="progress-container">
+<div class="progress"></div>
+</div>
+
+<div class="time">
+<span id="currentTime">0:00</span>
+<span id="duration">0:00</span>
+</div>
+
+<div class="hint">👆 Toca la portada</div>
+
+</div>
+<button class="play-btn" onclick="toggleMusic()">⏸</button>
+</div>
+
+<!-- SOBRE -->
+<div class="envelope" id="envelope" onclick="openLetter()"></div>
+
+<!-- CARTA -->
+<div class="letter" id="letter">
+<h2>De mi para ti</h2>
+<p>
+Quiero que cada día de tu vida esté lleno de luz, felicidad y bonitas cosas. Esto no es ni la mitad de todo ese cariño, amor, afecto y gratitud que siento por ti y de alguna u otra forma tengo que hacértelo saber, eres un ser precioso, una persona de la cual se aprende un montón, con una gracia y un carisma único, una persona con la que vale la pena compartir y pasar el tiempo. No soy el mejor expresando cosas, pero ojalá que estas palabras te hagan entender lo mucho que vales y lo mucho que estoy agradecido de conocerte, me siento muy feliz de ser parte importante en tu vida, así como lo eres para la mía. Simplemente gracias por todo, por dedicar de tu tiempo en mi y por salvarme en muchas ocasiones (aunque fuera de manera silenciosa). Que Dios nos de vida a ambos para seguir disfrutando de la compañia del otro y en especial que nos permita medir distancia solo en centímetros y no en kilómetros. Feliz CUM bb. 💖✨
+</p>
+</div>
+
+<!-- NUEVO TEXTO INTERACTIVO -->
+<div class="debt-trigger" id="debtTrigger">Te lo debía uwu
+(Haz click aquí)</div>
+
+<div class="debt-container" id="debtContainer">
+<img src="img/fatiopc1.png">
+<p>Uno siempre cumple, tarde o temprano jsajsa</p>
+</div>
+
+<!-- BANANA -->
+<img src="img/banana.gif" id="banana">
+
+<!-- SORPRESA TEXTO -->
+<div class="secret" id="secret">Pinche canción toda hermosa, la escogí porque sé lo mucho que representa para ti y quería que esto llevara algo que te identificara y se viera bien para ti :3 "I'll always be here"</div>
+
+<!-- MENSAJE ESQUINA -->
+<div class="corner-hint">✨ Haz click aquí</div>
+
+<!-- SORPRESA DIBUJO -->
+<div class="corner-secret" id="cornerSecret">
+<img id="cornerImage" src="img/dibujo1.png">
+</div>
+
+<div class="corner-trigger" id="cornerTrigger"></div>
+
+<!-- AUDIO -->
+<audio id="bgMusic" src="music/Right Here.mp3"></audio>
+<audio id="dialogo" src="music/dialogo.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
